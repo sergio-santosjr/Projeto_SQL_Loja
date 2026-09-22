@@ -1,0 +1,10 @@
+USE LojaDB;
+GO
+
+CREATE TABLE Clientes (
+	ID_Cliente INT NOT NULL PRIMARY KEY,
+	Nome_Cliente VARCHAR(50) NOT NULL,
+	Email VARCHAR(100),
+	Cidade VARCHAR(50),
+	Data_Cadastro DATE NOT NULL
+	);

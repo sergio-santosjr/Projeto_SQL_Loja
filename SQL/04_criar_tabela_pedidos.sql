@@ -1,0 +1,12 @@
+USE LojaDB;
+GO
+
+CREATE TABLE Pedidos (
+	ID_Pedido INT NOT NULL PRIMARY KEY,
+	ID_Cliente INT NOT NULL,
+	DATA_Pedido DATE NOT NULL,
+	Status VARCHAR(30) NOT NULL,
+
+	FOREIGN KEY (ID_Cliente)
+	REFERENCES Clientes(ID_Cliente)
+	);

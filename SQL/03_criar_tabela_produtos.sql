@@ -1,0 +1,10 @@
+USE LojaDB;
+GO
+
+CREATE TABLE Produtos (
+	ID_Produto INT NOT NULL PRIMARY KEY,
+	Nome_produto VARCHAR(100) NOT NULL,
+	Categoria VARCHAR(50) NOT NULL,
+	Preco DECIMAL(10,2) NOT NULL,
+	Estoque INT NOT NULL,
+	);
